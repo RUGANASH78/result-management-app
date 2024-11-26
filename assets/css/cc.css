@@ -1,0 +1,241 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* Form Styles */
+form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Button Styles for Manage Actions */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.head{
+    background-color: rgb(15, 15, 15);
+    opacity: 0.5;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 15px;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    align-items: center;
+}
+.goback{
+    background-color: #007BFF;
+    border: #0056b3;
+    border-radius: 2px;
+    width: 10%;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+}
+.ok{
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    input[type="submit"], button {
+        width: 100%;
+    }
+}
+/* Media Query for Small Screens (max-width: 460px) */
+@media (max-width: 460px) {
+    .head{
+        background-color: rgb(15, 15, 15);
+        opacity: 0.5;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        padding: 15px;
+    }
+    a{
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px;
+        align-items: center;
+    }
+    .goback{
+        background-color: #007BFF;
+        border: #0056b3;
+        border-radius: 2px;
+        width: 20%;
+        text-align: center;
+        font-size: 14px;
+        color: white;
+        margin: 10px;
+    }
+    .ok{
+        width: 20%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    body {
+        padding: 10px; /* Reduce padding for small screens */
+    }
+
+    form {
+        padding: 15px; /* Reduce form padding */
+        box-shadow: none; /* Remove box shadow for simpler appearance */
+        border-radius: 3px; /* Adjust border radius */
+        margin-top: 20px;
+    }
+
+    label {
+        margin: 8px 0 4px; /* Adjust spacing for labels */
+        font-size: 14px; /* Smaller font size for labels */
+    }
+
+    select,
+    input[type="submit"] {
+        padding: 8px; /* Reduce padding for inputs */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    input[type="submit"] {
+        padding: 10px; /* Adjust padding */
+        font-size: 14px; /* Reduce font size */
+    }
+
+    button {
+        padding: 8px 10px; /* Adjust button padding */
+        font-size: 14px; /* Reduce button font size */
+    }
+
+    h2 {
+        font-size: 18px; /* Adjust heading font size */
+        text-align: center; /* Center-align headings */
+    }
+}
+/* Media Query for Small Screens (max-width: 460px) */
+@media (max-width: 760px) {
+    .head{
+        background-color: rgb(15, 15, 15);
+        opacity: 0.5;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        padding: 15px;
+    }
+    a{
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px;
+        align-items: center;
+    }
+    .goback{
+        background-color: #007BFF;
+        border: #0056b3;
+        border-radius: 2px;
+        width: 20%;
+        text-align: center;
+        font-size: 12px;
+        color: white;
+        margin: 10px;
+    }
+    .ok{
+        width: 20%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    body {
+        padding: 10px; /* Reduce padding for small screens */
+    }
+
+    form {
+        padding: 15px; /* Reduce form padding */
+        box-shadow: none; /* Remove box shadow for simpler appearance */
+        border-radius: 3px; /* Adjust border radius */
+    }
+
+    label {
+        margin: 8px 0 4px; /* Adjust spacing for labels */
+        font-size: 14px; /* Smaller font size for labels */
+    }
+
+    select,
+    input[type="submit"] {
+        padding: 8px; /* Reduce padding for inputs */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    input[type="submit"] {
+        padding: 10px; /* Adjust padding */
+        font-size: 14px; /* Reduce font size */
+    }
+
+    button {
+        padding: 8px 10px; /* Adjust button padding */
+        font-size: 14px; /* Reduce button font size */
+    }
+
+    h2 {
+        font-size: 18px; /* Adjust heading font size */
+        text-align: center; /* Center-align headings */
+    }
+}
