@@ -1,0 +1,100 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: url('../images/student_profile.png') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire screen */
+    margin: 0;
+    padding: 0;
+    filter: brightness(1);
+    color: #ffffff; /* Default text color for better visibility */
+}
+
+/* profile*/
+
+.profile img{
+    border: 2px rgb(248, 248, 248);
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    object-fit:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    text-align: center;
+}
+.student-profile{
+    margin: 40px 450px;
+    display:grid;
+    background-color: rgba(10, 10, 10, 0.253);
+    box-shadow: 2px;
+    border-radius: 3%;
+    border:5px rgba(158, 158, 158, 0.568) ;
+    
+    
+}
+.first-part{
+    background-color:rgba(71, 67, 67, 0.555);
+    margin: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 5px rgba(137, 138, 137, 0.295);
+    border-radius: 6%;
+    height: 170px;
+    
+}
+.profile{
+   margin: 10px 2px;
+   margin-bottom: 5px;
+   height: 100px;
+   
+   
+}
+.profile img{
+    margin: 5px 105px;
+    height:120px;
+    width: 120px;
+    overflow: hidden;
+
+}
+/*.form-design{
+    margin: 1px ;
+    margin-left: 20px;
+    display: flex;
+}*/
+
+
+.details{
+    background-color: rgba(48, 46, 46, 0.432);
+    margin: 1.3px 10px 15px 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+}
+.details p{
+    font-size: medium; 
+    font-family: 'Times New Roman', Times, serif;
+            
+}
+.btn{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 2px white;
+    background-color: rgb(6, 166, 240);
+    margin: 1.3px 150px 15px 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: background-color 0.3s transform 0.3s;
+    font-size:16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+
+}
+.btn:hover {
+    background-color: rgba(0, 174, 255, 0.692);
+    transform: 0.3s;
+    text-decoration:5px rgba(126, 89, 184, 0.658) underline;
+    
+}

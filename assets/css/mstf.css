@@ -1,0 +1,309 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.back-button, .add-button {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.back-button {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.back-button:hover {
+    background-color: #d9534f;
+}
+
+.add-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.add-button:hover {
+    background-color: #218838;
+}
+
+/* Table Styles */
+.staff-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.staff-table th,
+.staff-table td {
+    padding: 10px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.staff-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #555;
+}
+
+.staff-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.staff-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Action Buttons */
+.staff-table td .edit-button,
+.staff-table td .delete-button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 3px 8px;
+    margin-top: 5px;
+    margin-right: 5px; /* Added spacing between buttons */
+    border-radius: 3px;
+    transition: background 0.3s;
+}
+
+.edit-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Media Queries */
+
+/* For screens up to 460px */
+/* For screens up to 460px */
+@media screen and (max-width: 460px) {
+    .header {
+        flex-direction: column; /* Stack elements for narrow screens */
+        align-items: flex-start;
+    }
+
+    .header h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .back-button, .add-button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .staff-table {
+        overflow-x: auto; /* Enable horizontal scrolling for the table */
+        display: block; /* Prevent table layout from breaking */
+    }
+
+    .staff-table th, 
+    .staff-table td {
+        padding: 8px;
+        font-size: 12px;
+        white-space: nowrap; /* Prevent text wrapping for compact display */
+    }
+
+    .staff-table td {
+        text-align: left;
+    }
+
+    .staff-table td .edit-button, 
+    .staff-table td .delete-button {
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+
+    /* Add a visual indicator for scrolling */
+    .staff-table::-webkit-scrollbar {
+        height: 6px; /* Small scrollbar height */
+    }
+
+    .staff-table::-webkit-scrollbar-thumb {
+        background-color: #ccc; /* Thumb color */
+        border-radius: 3px;
+    }
+
+    .staff-table::-webkit-scrollbar-track {
+        background: #f1f1f1; /* Track color */
+    }
+}
+
+
+
+/* For screens up to 760px */
+@media screen and (max-width: 760px) {
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .back-button, .add-button {
+        font-size: 13px;
+        padding: 9px 18px;
+    }
+
+    .staff-table th, 
+    .staff-table td {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .staff-table td .edit-button, 
+    .staff-table td .delete-button {
+        font-size: 11px;
+        padding: 4px 9px;
+    }
+}
+
+/* For landscape orientation */
+@media screen and (orientation: landscape) {
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .staff-table th, 
+    .staff-table td {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .staff-table td .edit-button, 
+    .staff-table td .delete-button {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
+/* Base Styles for Search Form */
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-form input[type="text"] {
+    width: 70%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+}
+
+.search-form .clear-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #007bff;
+    background-color: transparent;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.search-form .clear-button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 760px) {
+    .search-form input[type="text"] {
+        width: 60%;
+    }
+
+    .search-form button,
+    .search-form .clear-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 460px) {
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-form input[type="text"] {
+        width: 90%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .search-form button,
+    .search-form .clear-button {
+        width: 90%;
+    }
+}
+
+@media (max-width: 360px) {
+    .search-form input[type="text"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .search-form button,
+    .search-form .clear-button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}

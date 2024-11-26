@@ -1,0 +1,132 @@
+/* student_style.css */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: url('../images/student_dashboard.png') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire screen */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color for better visibility */
+    opacity: 1;
+    filter: blur(1);
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: transparent;
+    background-color: rgba(152, 194, 207, 0.5); /* Black with 50% transparency */
+    margin-bottom: 20px;
+    
+}.navbar-right .dropdown {
+    position: relative;
+}
+
+.navbar-right .dropbtn {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+.navbar-right .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.navbar-right .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar-right .dropdown-content a:hover {
+    background-color: #555;
+}
+
+/* Show dropdown on button hover */
+.navbar-right .dropdown:hover .dropdown-content {
+    display: block;
+}
+/* profile*/
+.navbar-left {
+    height: 70px;
+    width: 5%;
+    background-color: #c4bebe;
+    margin: 5px 20px ;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+.navbar-left img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    text-align: center;
+}
+
+.student-home {
+    background-color: rgba(28, 213, 255, 0.5);
+    border: 10px solid rgba(2, 133, 255, 0.445);
+    margin: 20px 500px;
+    border-radius: 3%;
+    color: #020202;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 18px 18px rgba(75, 135, 224, 0.301);
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li,p {
+    background-color: #1550cf62;
+    color: white;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
